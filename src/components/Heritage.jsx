@@ -2,7 +2,7 @@ export default function Heritage() {
   return (
     <section className="heritage" id="historia" aria-labelledby="heritage-title">
       <div className="heritage-art" data-reveal>
-        <img src="/assets/heritage-story.jpeg" alt="Ilustración histórica de navíos, mapas y la catedral de Santo Domingo" />
+        <img src="/assets/heritage-story.png" alt="Ilustración histórica de navíos, mapas y la catedral de Santo Domingo" />
         <span className="art-caption">Santo Domingo · 1496</span>
       </div>
       <div className="heritage-copy" data-reveal>

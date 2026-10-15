@@ -11,8 +11,11 @@ export default function Collection() {
 
       <div className="collection-layout">
         <div className="collection-portrait" data-reveal>
-          <img src="/assets/watch-chronograph.jpeg" alt="Cronógrafo PRIMADA con esfera antracita y correa de cuero marrón" loading="lazy" />
-          <div className="portrait-tag"><span>01</span><small>Dos expresiones de una misma identidad</small></div>
+          <img
+            src="/assets/primada-1496-product-sheet.jpeg"
+            alt="Presentación de PRIMADA 1496 con dos vistas del reloj, fondos de caja, estuche y especificaciones"
+            loading="lazy"
+          />
         </div>
         <div className="collection-copy" data-reveal>
           <p className="eyebrow">Precisión &amp; carácter</p>

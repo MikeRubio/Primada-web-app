@@ -187,12 +187,12 @@ h3 { font-size: clamp(34px, 3.4vw, 58px); }
 .detail-card small { max-width: 370px; min-height: 47px; color: rgba(255,255,255,.58); font-size: 16px; line-height: 1.45; }
 .detail-card i { margin-top: 18px; color: var(--gold-light); font: normal 500 10px/1 var(--sans); letter-spacing: .17em; text-transform: uppercase; }
 
-.craft { min-height: 800px; display: grid; grid-template-columns: 1.1fr .9fr; color: #1c1811; background: var(--paper); }
-.craft-image { min-height: 800px; overflow: hidden; }
-.craft-image img { width: 100%; height: 100%; object-fit: cover; object-position: 40% center; }
-.craft-copy { align-self: center; padding: 90px clamp(40px, 7vw, 125px); }
+.craft { color: #1c1811; background: var(--paper); }
+.craft-image { overflow: hidden; background: #050505; }
+.craft-image img { width: 100%; max-width: 1536px; height: auto; margin-inline: auto; object-fit: contain; }
+.craft-copy { max-width: 1180px; margin-inline: auto; padding: 90px max(6vw, 40px) 110px; }
 .craft-copy h2 { margin-bottom: 28px; }
-.craft-copy > p:not(.eyebrow) { font-size: 21px; line-height: 1.6; }
+.craft-copy > p:not(.eyebrow) { max-width: 780px; font-size: 21px; line-height: 1.6; }
 .edition-mark { display: flex; align-items: center; gap: 22px; margin-top: 40px; padding-top: 30px; border-top: 1px solid var(--line-dark); }
 .edition-mark > span { color: #8e6c2e; font-size: 74px; line-height: 1; }
 .edition-mark p { font-size: 16px; line-height: 1.45; }
@@ -268,8 +268,7 @@ h3 { font-size: clamp(34px, 3.4vw, 58px); }
   .collection-layout { grid-template-columns: 1fr; }
   .collection-portrait { min-height: min(120vw, 760px); }
   .collection-copy { max-width: 100%; }
-  .craft { grid-template-columns: 1fr; }
-  .craft-image { min-height: 75vw; }
+  .craft-image { min-height: 0; }
   .origin { grid-template-columns: 1fr; }
   .origin > img { min-height: 300px; }
   .reservation { grid-template-columns: 1fr; }
@@ -296,7 +295,7 @@ h3 { font-size: clamp(34px, 3.4vw, 58px); }
   .section-heading { margin-bottom: 38px; }
   .detail-grid { grid-template-columns: 1fr; gap: 42px; }
   .detail-card small { min-height: 0; }
-  .craft-image { min-height: 92vw; }
+  .craft-image { min-height: 0; }
   .craft-copy { padding: 64px 22px 78px; }
   .craft-copy h2 { font-size: 46px; }
   .origin > img { min-height: 230px; }

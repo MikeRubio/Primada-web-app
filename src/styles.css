@@ -208,7 +208,7 @@ h3 { font-size: clamp(34px, 3.4vw, 58px); }
   align-items: center; min-height: 610px; padding: 100px max(6vw, 28px); color: #19150f;
   background:
     linear-gradient(rgba(245,239,229,.94), rgba(245,239,229,.94)),
-    url("assets/heritage-story.jpeg") center / cover;
+    url("/assets/heritage-story.jpeg") center / cover;
 }
 .reservation h2 { margin-bottom: 24px; }
 .reservation-copy > p:not(.eyebrow) { max-width: 620px; font-size: 20px; line-height: 1.55; }

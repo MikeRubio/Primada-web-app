@@ -3,3 +3,5 @@
 *-section.png
 .qa-assets/
 *.tgz
+node_modules/
+dist/

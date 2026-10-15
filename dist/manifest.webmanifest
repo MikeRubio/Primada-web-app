@@ -1,0 +1,17 @@
+{
+  "name": "PRIMADA 1496",
+  "short_name": "PRIMADA",
+  "description": "Descubre la edición fundadores PRIMADA 1496.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a09",
+  "theme_color": "#0a0a09",
+  "icons": [
+    {
+      "src": "assets/primada-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

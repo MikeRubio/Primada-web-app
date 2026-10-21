@@ -1,7 +1,7 @@
 export const facts = [
   ['Movimiento', 'Sellita SW200-1'],
-  ['Caja', 'Acero inoxidable 316L'],
-  ['Cristal', 'Zafiro curvado'],
+  ['Caja', 'Acero inoxidable · 42 mm'],
+  ['Cristal', 'Zafiro'],
   ['Resistencia', '200 metros'],
 ];
 

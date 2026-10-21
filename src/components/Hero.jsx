@@ -30,14 +30,14 @@ export default function Hero() {
       </div>
 
       <figure className="hero-visual" aria-label="Reloj PRIMADA 1496">
-        <img ref={watchRef} src="/assets/hero-watch.jpeg" alt="Reloj PRIMADA 1496 con esfera negra y correa de cuero" />
+        <img ref={watchRef} src="/assets/primada-1496-front.jpeg" alt="PRIMADA 1496 automático con esfera negra y correa de cuero" />
         <figcaption><span>Founders Edition</span><span>01/33 — 33/33</span></figcaption>
       </figure>
 
       <div className="hero-specs" aria-label="Características principales">
-        <span><b>41.5 mm</b> Diámetro</span>
+        <span><b>42 mm</b> Diámetro</span>
         <span><b>200 m</b> Resistencia</span>
-        <span><b>Automático</b> Movimiento</span>
+        <span><b>SW200-1</b> Sellita automático</span>
       </div>
       <a className="scroll-cue" href="#historia" aria-label="Descubrir nuestra historia">Descubrir <i /></a>
     </section>

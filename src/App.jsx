@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Heritage from './components/Heritage';
 import Collection from './components/Collection';
 import { DetailDialog, Details } from './components/Details';
+import Movement from './components/Movement';
 import Craft from './components/Craft';
 import Reservation from './components/Reservation';
 import Footer from './components/Footer';
@@ -46,6 +47,7 @@ export default function App() {
         <Heritage />
         <Collection />
         <Details onSelect={setSelectedDetail} />
+        <Movement />
         <Craft />
         <Reservation />
       </main>

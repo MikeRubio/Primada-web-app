@@ -32,9 +32,9 @@ export default function Header({ menuOpen, setMenuOpen }) {
       </button>
 
       <nav className={`main-nav${menuOpen ? ' is-open' : ''}`} id="main-nav" aria-label="Navegación principal">
-        <a href="#coleccion" onClick={closeMenu}>Colección</a>
+        <a href="#coleccion" onClick={closeMenu}>El reloj</a>
+        <a href="#movimiento" onClick={closeMenu}>El movimiento</a>
         <a href="#historia" onClick={closeMenu}>Nuestra historia</a>
-        <a href="#contacto" onClick={closeMenu}>Contacto</a>
         <a className="nav-cta" href="#reserva" onClick={closeMenu}>Reservar</a>
       </nav>
     </header>

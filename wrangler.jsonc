@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "primada-web-app",
+  "compatibility_date": "2026-10-21",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  },
+  "routes": [
+    {
+      "pattern": "primadawatches.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.primadawatches.com",
+      "custom_domain": true
+    }
+  ],
+  "workers_dev": true,
+  "preview_urls": true
+}

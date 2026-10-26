@@ -10,11 +10,16 @@ export default function Collection() {
       </div>
 
       <div className="collection-layout">
-        <div className="collection-portrait" data-reveal>
-          <img
-            src="/assets/primada-1496-specifications.jpeg"
-            alt="Lámina técnica de PRIMADA 1496 con vistas frontal, lateral y posterior"
-            loading="lazy"
+        <div className="collection-media" data-reveal>
+          <video
+            src="/assets/primada-1496-film.mp4"
+            aria-label="Película de producto del reloj PRIMADA 1496"
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+            preload="metadata"
           />
         </div>
         <div className="collection-copy" data-reveal>

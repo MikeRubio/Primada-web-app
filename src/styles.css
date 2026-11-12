@@ -169,6 +169,53 @@ h3 { font-size: clamp(34px, 3.4vw, 58px); }
 .facts dt { color: rgba(255,255,255,.48); font: 500 10px/1.4 var(--sans); letter-spacing: .18em; text-transform: uppercase; }
 .facts dd { margin: 0; text-align: right; font-size: 17px; }
 
+.straps {
+  padding: 118px max(4vw, 24px) 132px; color: var(--ivory); background: #080807;
+  border-top: 1px solid var(--line-light);
+}
+.straps-heading {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, .54fr); gap: clamp(40px, 7vw, 110px);
+  align-items: end; max-width: 1440px; margin: 0 auto 62px;
+}
+.straps-heading h2 { max-width: 800px; }
+.straps-heading > p {
+  max-width: 530px; margin: 0 0 6px; color: rgba(255,255,255,.58); font-size: 19px; line-height: 1.6;
+}
+.straps-gallery {
+  display: grid; grid-template-columns: minmax(0, 1.72fr) repeat(2, minmax(190px, .64fr));
+  gap: clamp(10px, 1.25vw, 20px); max-width: 1680px; margin-inline: auto;
+}
+.straps-gallery figure { position: relative; min-width: 0; margin: 0; overflow: hidden; }
+.straps-film { aspect-ratio: 16 / 9; background: #020303; }
+.straps-film::after {
+  content: ""; position: absolute; pointer-events: none; inset: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,.64), transparent 34%);
+}
+.straps-film video { display: block; width: 100%; height: 100%; object-fit: cover; }
+.straps-film figcaption {
+  position: absolute; z-index: 2; left: clamp(18px, 2.5vw, 38px); bottom: clamp(18px, 2.5vw, 34px);
+  display: grid; gap: 6px;
+}
+.straps-film figcaption span,
+.strap-card figcaption span {
+  color: var(--gold-light); font: 600 9px/1 var(--sans); letter-spacing: .22em; text-transform: uppercase;
+}
+.straps-film figcaption small { color: #fff; font-size: clamp(18px, 1.55vw, 25px); }
+.strap-card { aspect-ratio: 3 / 4; background: #f4f3f0; }
+.strap-card::after {
+  content: ""; position: absolute; pointer-events: none; inset: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,.56), transparent 31%);
+}
+.strap-card img {
+  width: 100%; height: 100%; object-fit: cover; transition: transform .7s cubic-bezier(.2,.7,.2,1);
+}
+.strap-card:hover img { transform: scale(1.035); }
+.strap-card figcaption {
+  position: absolute; z-index: 2; left: clamp(16px, 1.7vw, 27px); right: 16px; bottom: clamp(16px, 1.7vw, 25px);
+  display: grid; gap: 8px;
+}
+.strap-card figcaption strong { color: #fff; font-size: clamp(18px, 1.5vw, 25px); font-weight: 400; }
+
 .details { padding: 120px max(4vw, 24px) 135px; background: #0e0e0d; border-top: 1px solid var(--line-light); }
 .detail-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(18px, 2.5vw, 38px); max-width: 1400px; margin: 0 auto; }
 .detail-card {
@@ -311,6 +358,10 @@ h3 { font-size: clamp(34px, 3.4vw, 58px); }
   .collection-layout { grid-template-columns: 1fr; }
   .collection-media { min-height: 0; }
   .collection-copy { max-width: 100%; }
+  .straps-heading { grid-template-columns: 1fr; }
+  .straps-gallery { grid-template-columns: repeat(2, 1fr); }
+  .straps-film { grid-column: 1 / -1; }
+  .strap-card { aspect-ratio: 4 / 5; }
   .movement-story { grid-template-columns: 1fr; }
   .movement-exploded { max-height: 720px; }
   .reservation { grid-template-columns: 1fr; }
@@ -332,9 +383,15 @@ h3 { font-size: clamp(34px, 3.4vw, 58px); }
   .heritage-art { min-height: 440px; }
   .heritage-copy { padding: 48px 22px 72px; }
   .heritage-copy h2 { font-size: 48px; }
-  .collection, .details { padding: 82px 20px; }
+  .collection, .details, .straps { padding: 82px 20px; }
   .collection-media { min-height: 0; }
   .section-heading { margin-bottom: 38px; }
+  .straps-heading { gap: 22px; margin-bottom: 38px; }
+  .straps-heading > p { font-size: 17px; }
+  .straps-gallery { gap: 8px; }
+  .straps-film { aspect-ratio: 16 / 10; }
+  .strap-card figcaption { left: 13px; right: 10px; bottom: 14px; gap: 5px; }
+  .strap-card figcaption strong { font-size: 17px; }
   .detail-grid { grid-template-columns: 1fr; gap: 42px; }
   .detail-card small { min-height: 0; }
   .movement-film video { min-height: 300px; object-fit: cover; }

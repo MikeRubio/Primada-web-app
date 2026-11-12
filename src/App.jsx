@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Heritage from './components/Heritage';
 import Collection from './components/Collection';
+import Straps from './components/Straps';
 import { DetailDialog, Details } from './components/Details';
 import Movement from './components/Movement';
 import Craft from './components/Craft';
@@ -46,6 +47,7 @@ export default function App() {
         <Hero />
         <Heritage />
         <Collection />
+        <Straps />
         <Details onSelect={setSelectedDetail} />
         <Movement />
         <Craft />
